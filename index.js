@@ -47,9 +47,9 @@ const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
-    XBOT: '𝐁𝐎𝐓 𝐃𝐎 𝐀𝐙𝐀𝐑𝐊 𝐎𝐅𝐅', 
+    XBOT: '𝐁𝐎𝐓 DO ZK'
     instagram: 'OFF', 
-    nomer: 'wa.me/554191721216',
+    nomer: 'wa.me/5543991112879',
     youtube: 'OFF', 
     whatsapp: 'Comming soon', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
@@ -152,7 +152,7 @@ client.on('group-participants-update', async (anu) => {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '❬🤙❭AGUARDE  UM POUCO GARAIO KK❬🤙❭',
+				wait: '❬🤙❭AGUARDE  UM POUCO PFV KK❬🤙❭',
 				success: '️❬ ✔ ❭ PRONTO',
 				error: {
 					stick: 'Eu falhei :( desculpa',
@@ -610,7 +610,7 @@ case 'lofi':
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`nao mamou o bonde direitinho perde adm @${mentioned[0].split('@')[0]} seu gay`, mentioned, true)
+						mentions(`perdeu o adm @${mentioned[0].split('@')[0]} KKK`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -624,13 +624,13 @@ case 'lofi':
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `novo adm fml esse mamou o bonde pra ser ADM :\n`
+							teks += `novo adm fml é foda :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`novo adm fml sem escandalo @${mentioned[0].split('@')[0]} esse mamou o bonde pra ser ADM`, mentioned, true)
+						mentions(`novo adm fml sem escandalo @${mentioned[0].split('@')[0]} k`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break	
@@ -645,7 +645,7 @@ case 'lofi':
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `removi mermo fodassi 🏃 :\n`
+							teks += `ops 🏃 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
@@ -669,7 +669,7 @@ case 'lofi':
 					break
 				case 'toimg':
 				case 'converter':
-					if (!isQuotedSticker) return reply('marca a fig inteligente')
+					if (!isQuotedSticker) return reply('marca a fig brow')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
